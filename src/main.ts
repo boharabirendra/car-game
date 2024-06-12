@@ -21,25 +21,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const road = new Road(DIMENSION.CANVAS_HEIGHT, 500, 4, 100, 40, 20, -40, 5);
 
-  const car1 = new Car(150, 128, "../public/car.png", 540, 670);
+  const car1 = new Car(150, 128, "car.png", 540, 670);
   const car2 = new Car(
     150,
     128,
-    "../public/car1.png",
+    "car1.png",
     434,
     getRandomInt(-100, 0)
   );
   const car3 = new Car(
     150,
     128,
-    "../public/car1.png",
+    "car1.png",
     636,
     getRandomInt(-400, -800)
   );
   const car4 = new Car(
     150,
     128,
-    "../public/car1.png",
+    "car1.png",
     536,
     getRandomInt(-1200, -1400)
   );
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
   };
   
-  image.src = "../public/start_background.jpg";
+  image.src = "start_background.jpg";
   
 
   function startGame(){
